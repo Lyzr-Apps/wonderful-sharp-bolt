@@ -110,7 +110,7 @@ function App() {
         {!formattedFortune ? (
           <div className="text-center space-y-8">
             <div>
-              <h1 className="text-5xl font-bold text-white mb-4 tracking-wide">
+              <h1 className="text-5xl font-bold text-white mb-4 tracking-wide animate-pulse">
                 Fortune Pill App
               </h1>
               <p className="text-gray-300 text-lg">
@@ -164,14 +164,14 @@ function App() {
             >
               <div className="text-center space-y-6">
                 <h2
-                  className="text-3xl font-bold mb-4"
+                  className="text-3xl font-bold mb-4 animate-bounce"
                   style={{ color: isRedTheme ? '#D32F2F' : '#1976D2' }}
                 >
                   {formattedFortune.title}
                 </h2>
 
                 <div
-                  className={`text-lg leading-relaxed text-gray-200 text-center whitespace-pre-line ${formattedFortune.styling.font_style === 'matrix-code' ? 'font-mono' : 'font-sans'}`}
+                  className={`text-lg leading-relaxed text-gray-200 text-center whitespace-pre-line animate-pulse ${formattedFortune.styling.font_style === 'matrix-code' ? 'font-mono' : 'font-sans'}`}
                 >
                   {formattedFortune.content}
                 </div>
