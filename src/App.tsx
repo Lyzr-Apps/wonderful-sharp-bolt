@@ -123,7 +123,7 @@ function App() {
           <div className="text-center space-y-8">
             <div>
               <h1 className="text-5xl font-bold text-white mb-4 tracking-wide animate-pulse">
-                Fortune Pill App
+                Fortune man
               </h1>
               <p className="text-gray-300 text-lg animate-pulse">
                 Choose your destiny. Red for mystery, Blue for serenity.
