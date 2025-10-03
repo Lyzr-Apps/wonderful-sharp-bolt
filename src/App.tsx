@@ -105,7 +105,7 @@ function App() {
   const isRedTheme = formattedFortune?.styling.theme_color === '#D32F2F';
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-pink-200 via-pink-300 to-pink-400 flex items-center justify-center p-4">
+    <div className="min-h-screen bg-gradient-to-br from-gray-800 via-gray-700 to-gray-800 flex items-center justify-center p-4">
       <div className="w-full max-w-2xl">
         {!formattedFortune ? (
           <div className="text-center space-y-8">
