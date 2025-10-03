@@ -125,7 +125,7 @@ function App() {
               <h1 className="text-5xl font-bold text-white mb-4 tracking-wide animate-pulse">
                 Fortune Pill App
               </h1>
-              <p className="text-gray-300 text-lg">
+              <p className="text-gray-300 text-lg animate-pulse">
                 Choose your destiny. Red for mystery, Blue for serenity.
               </p>
             </div>
@@ -159,9 +159,9 @@ function App() {
             </div>
 
             {isLoading && (
-              <div className="flex justify-center items-center space-x-3">
+              <div className="flex justify-center items-center space-x-3 animate-bounce">
                 <div className="animate-spin rounded-full h-8 w-8 border-b-2" style={{ borderColor: isRedTheme !== undefined ? (isRedTheme ? '#D32F2F' : '#1976D2') : '#FFFFFF' }} />
-                <span className="text-gray-300">Consulting the digital oracle...</span>
+                <span className="text-gray-300 animate-pulse">Consulting the digital oracle...</span>
               </div>
             )}
           </div>
@@ -191,7 +191,7 @@ function App() {
                 <div className="flex justify-center pt-6">
                   <button
                     onClick={handleTryAgain}
-                    className="px-8 py-3 rounded-full text-white font-semibold transition-all duration-300 transform hover:scale-105 hover:shadow-xl"
+                    className="px-8 py-3 rounded-full text-white font-semibold transition-all duration-300 transform hover:scale-105 hover:shadow-xl animate-pulse"
                     style={{ backgroundColor: isRedTheme ? '#1976D2' : '#D32F2F' }}
                   >
                     Try Again
