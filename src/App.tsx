@@ -105,8 +105,20 @@ function App() {
   const isRedTheme = formattedFortune?.styling.theme_color === '#D32F2F';
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-gray-800 via-gray-700 to-gray-800 flex items-center justify-center p-4">
-      <div className="w-full max-w-2xl">
+    <div className="min-h-screen bg-gradient-to-br from-gray-800 via-gray-700 to-gray-800 flex items-center justify-center p-4 relative overflow-hidden">
+      <div className="absolute inset-0 overflow-hidden">
+        <div className="absolute top-10 left-10 w-2 h-2 bg-white rounded-full animate-ping opacity-30" />
+        <div className="absolute top-20 right-20 w-1 h-1 bg-blue-300 rounded-full animate-pulse opacity-50" />
+        <div className="absolute top-32 left-1/4 w-2 h-2 bg-purple-300 rounded-full animate-ping opacity-20" />
+        <div className="absolute top-40 right-1/3 w-1 h-1 bg-pink-300 rounded-full animate-pulse opacity-40" />
+        <div className="absolute bottom-20 left-20 w-2 h-2 bg-yellow-300 rounded-full animate-ping opacity-30" />
+        <div className="absolute bottom-32 right-16 w-1 h-1 bg-cyan-300 rounded-full animate-pulse opacity-50" />
+        <div className="absolute bottom-40 left-1/3 w-2 h-2 bg-green-300 rounded-full animate-ping opacity-25" />
+        <div className="absolute top-1/2 left-10 w-1 h-1 bg-orange-300 rounded-full animate-pulse opacity-40" />
+        <div className="absolute top-2/3 right-8 w-2 h-2 bg-indigo-300 rounded-full animate-ping opacity-30" />
+        <div className="absolute top-16 left-2/3 w-1 h-1 bg-red-300 rounded-full animate-pulse opacity-45" />
+      </div>
+      <div className="w-full max-w-2xl relative z-10">
         {!formattedFortune ? (
           <div className="text-center space-y-8">
             <div>
